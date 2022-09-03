@@ -9,28 +9,46 @@
 </head>
 <body class="page">
 <nav class="nav">
-    <!-- Navigate to blocks -->
+    <img src="./images/NYCTrees.svg" alt="NYC Trees Logo" class="nav__logo">
+        <img src="./images/nav__subway-start.svg" class="nav__subway-start" />
+        <ul class="nav__links">
+          <li> <a class="nav__link" href="#analysis">Analysis</a> </li>
+          <li> <a class="nav__link" href="#results">Results</a> </li>
+          <li> <a class="nav__link" href="#conclusions">Conclusions</a> </li>
+          <li> <a class="nav__link" href="#about">About</a> </li>
+        </ul>
+        <img src="./images/nav__subway-end.svg" class="nav__subway-end"/>
 </nav>
+
 <header class="header">
-    <!-- Problem Overview -->
-    <h1 class="header__title">Problem/Question</h1>
-</header>
+    <h1 class="header__title">Concrete Jungle</h1>
+    <p class="header__description">Planting trees in New York City</p>
+    <img src="./images/trees.png" class="header__trees" alt="A row of lucious green trees" />
+  </header>
+
 <main class="page__content">
-    <section class="analysis">
+    <section class="analysis" id="analysis">
         <!-- Analysis/Data - You can include facts and numbers about the chosen dataset and describe approaches used by the data analyst -->
-        <h2 class="analysis__title">Here is the data and the analysis</h2>
-    </section>
-    <section class="results">
+        <h2 class="analysis__title title">Here is the analysis</h2>
+        <div class="analysis__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque quis mi vel placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id nunc a odio porta lobortis quis non lorem. Vestibulum vel eros id ligula laoreet elementum at at metus. Sed egestas lectus a est pretium, eget tristique risus lacinia. Praesent enim libero, imperdiet in iaculis in, condimentum quis lectus. Cras efficitur gravida lectus eget rhoncus.</p>
+            <p>Etiam consequat facilisis purus. Morbi ac felis et felis tempus mollis quis sit amet libero. Integer porttitor malesuada elit, at imperdiet nulla tincidunt non. Pellentesque quis libero vulputate, elementum dolor vel, congue risus. Quisque tempus urna at tellus tempus, in aliquet nisl facilisis. Nunc porta accumsan enim eu sollicitudin. Duis sed maximus ante. Nunc sed velit nec felis finibus porttitor id a libero. Nunc elit nisl, mollis vel mi non, vestibulum vestibulum turpis. Aliquam ante urna, pulvinar id porta a, rutrum at nisi. Proin sit amet sagittis ligula. Mauris non orci nisl.</p>
+        </div>
+        <img src="./images/subway-map.svg" class="analysis__subway"/>
+        </section>
+    <section class="results" id="results">
         <!-- Results - Include any figures and tables necessary to visualize your case. -->
-        <h2 class="results__title">Here are the results</h2>
+        <h2 class="results__title title">Here are the results</h2>
     </section>
-    <section class="conclusions">
+    <section class="conclusions" id="conclusions">
         <!-- Conclusions - List main conclusions from the data analysis results. -->
-        <h2 class="conclusions__title">Here is the conclusion</h2>
+        <h2 class="conclusions__title title">Here is the conclusion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque quis mi vel placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id nunc a odio porta lobortis quis non lorem. Vestibulum vel eros id ligula laoreet elementum at at metus. Sed egestas lectus a est pretium, eget tristique risus lacinia. Praesent enim libero, imperdiet in iaculis in, condimentum quis lectus. Cras efficitur gravida lectus eget rhoncus.</p>
+        <p>Etiam consequat facilisis purus. Morbi ac felis et felis tempus mollis quis sit amet libero. Integer porttitor malesuada elit, at imperdiet nulla tincidunt non. Pellentesque quis libero vulputate, elementum dolor vel, congue risus. Quisque tempus urna at tellus tempus, in aliquet nisl facilisis. Nunc porta accumsan enim eu sollicitudin. Duis sed maximus ante. Nunc sed velit nec felis finibus porttitor id a libero. Nunc elit nisl, mollis vel mi non, vestibulum vestibulum turpis. Aliquam ante urna, pulvinar id porta a, rutrum at nisi. Proin sit amet sagittis ligula. Mauris non orci nisl.</p>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="about">
         <!-- Credits/About the Team? -->
-        <h3 class="footer__copyright">Created by Jenny Doctor and Dina Saadeh for Practicum's Code Bridge</h3>
+        <h3 class="footer__copyright">Created by Jenny Doctor and Dina Saadeh for Practicum's Fall 2022 Code Bridge</h3>
     </footer>
 </body>
 </html>

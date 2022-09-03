@@ -1,4 +1,9 @@
 .page{
     background-color: #0D0A0B;
     color: #f3eff5;
+    font-family: 'Hind', 'Arial', sans-serif;
+}
+
+.title {
+    font-family: 'Montserrat', 'Arial', sans-serif;
 }

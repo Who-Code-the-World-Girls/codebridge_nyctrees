@@ -1,0 +1,30 @@
+.header {
+    background: url(../images/header_background.jpg) no-repeat center / cover;
+    min-height: 720px;
+    height: 100vh;
+}
+
+.header__title {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    text-shadow: 0 0 10px #0D0A0B;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 150px;
+    margin: 0;
+    
+}
+
+.header__description {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    text-shadow: 0 0 10px #0D0A0B;
+    margin: 0;
+}
+
+.header__trees {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}

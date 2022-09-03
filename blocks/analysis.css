@@ -1,0 +1,23 @@
+.analysis {
+    background: #454955;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.analysis__title {
+    margin-left: auto;
+}
+
+.analysis__content {
+    margin-left: auto;
+    max-width: 750px;
+    padding: 50 35 50 0;
+}
+
+.analysis__subway {
+    position: absolute;
+    position: absolute;
+    left: -12.64%;
+    right: 56.46%;
+}
