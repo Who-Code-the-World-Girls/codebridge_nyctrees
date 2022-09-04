@@ -1,4 +1,15 @@
 .results {
     background: #0D0A0B;
     min-height: 600px;
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "graph1 graph2 graph3";
+    justify-content: center;
+}
+
+.results__title {
+    grid-area: "title";
+    -ms-grid-column-span: all;
+    margin-top: 52px;
 }

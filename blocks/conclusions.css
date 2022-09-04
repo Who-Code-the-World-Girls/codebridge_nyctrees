@@ -1,4 +1,16 @@
 .conclusions {
     background: #454955;
-    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 650px;
+}
+
+.conclusions__content {
+    align-self: center;
+    padding-left: 52px;
+}
+
+.conclusions__photo {
+    height: 650px;
+    justify-self: end;
 }

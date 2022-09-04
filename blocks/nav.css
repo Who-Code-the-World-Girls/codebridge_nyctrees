@@ -17,7 +17,7 @@
 }
 
 .nav__links {
-    list-style: disc;
+    list-style: none;
     font-weight: 400;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
@@ -25,6 +25,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     margin: 40px 80px 43px auto;
+    padding: 0;
 }
 
 .nav__link {
@@ -40,13 +41,12 @@
 }
 
 .nav__subway-start {
-    position: absolute;
+    position: relative;
     right: 380px;
     top: 43px;
 }
 
 .nav__subway-end {
-    position: absolute;
+    position: relative;
     right: 50px;
-    top: -6px;
 }
