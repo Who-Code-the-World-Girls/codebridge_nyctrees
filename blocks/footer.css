@@ -13,7 +13,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 60px 100px 108px 80px;
+    padding: 60px 100px 108px;
 }
 
 .footer__list {
@@ -56,4 +56,20 @@
 .footer__copyright {
     padding: 0px 0px 60px 80px;
     margin: 0;
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    .footer__content{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .footer__logo {
+        margin-top: 32px;
+    }
+    .footer__copyright {
+        text-align: center;
+        padding-left: 0;
+    }
 }
