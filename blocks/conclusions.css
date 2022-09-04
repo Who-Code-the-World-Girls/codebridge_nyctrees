@@ -2,15 +2,40 @@
     background: #454955;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-height: 650px;
+    max-width: 1440px;
 }
 
 .conclusions__content {
     align-self: center;
-    padding-left: 52px;
+    margin: 0px 52px;
 }
 
 .conclusions__photo {
     height: 650px;
     justify-self: end;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .conclusions {
+        grid-template-columns: 1fr;
+    }
+    .conclusions__photo {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .conclusions {
+        grid-template-columns: 1fr;
+    }
+    .conclusions__photo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }

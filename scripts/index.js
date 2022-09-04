@@ -1,9 +1,11 @@
-var map = L.map('map').setView([37.8, -96], 4);
+var image = document.getElementsByClassName('conclusions__photo');
+new simpleParallax(image, {
+	overflow: true
+});
 
-var tiles= L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom:19;
-}).addTo(map);
-
-let geojsonLayer = L.geoJSON(boroughBoundaries);
-geojsonLayer.addTo(map);
+var polygonSeries = chart.series.push(
+    am5map.MapPolygonSeries.new(root, {
+      geoJSON: boroughBoundaries
+    })
+  );
 

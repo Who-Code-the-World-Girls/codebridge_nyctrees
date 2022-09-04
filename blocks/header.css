@@ -11,11 +11,14 @@
     font-family: 'Montserrat', 'Arial', sans-serif;
     text-shadow: 0 0 15px #0D0A0B;
     font-weight: 700;
-    font-size: 128px;
+    font-size: 120px;
     line-height: 150px;
+    margin: 160px auto 0 auto;
     align-self: center;
     z-index: 2;
-    position: absolute;
+    backdrop-filter: brightness(60%);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
 }
 
 .header__description {
@@ -23,14 +26,55 @@
     font-size: 40px;
     line-height: 50px;
     font-weight: 400;
-    text-shadow: 0 0 15px #0D0A0B;
+    text-shadow: 0 0 10px #0D0A0B;
     align-self: center;
     z-index: 2;
-    position: absolute;
     top: 200px;
+    backdrop-filter: brightness(60%);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
 }
 
 .header__trees {
     width: 100%;
+    max-height: 10%;
+    object-fit: cover;
     z-index: 1;
+}
+
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header__title {
+        font-size: 5.5rem;
+    }
+    .header__description {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}
+
+/* mobile */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .header__title {
+        font-size: 4rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    .header__description {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .header__title {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .header__description {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
 }

@@ -2,13 +2,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #0D0A0B;
 }
 
 .nav__logo {
@@ -40,13 +36,21 @@
     color: #72B01D;
 }
 
-.nav__subway-start {
-    position: relative;
-    right: 380px;
-    top: 43px;
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .nav__links {
+        margin: 30px 40px 30px auto;
+    }
 }
 
-.nav__subway-end {
-    position: relative;
-    right: 50px;
+/* mobile */
+@media screen and (max-width: 767px) {
+    .nav__logo {
+        height: 40px;
+        margin-left: 10px;
+        align-self: center;
+    }
+    .nav__links {
+        margin: 20px 10px 20px auto;
+    }
 }

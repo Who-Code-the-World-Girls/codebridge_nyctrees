@@ -24,6 +24,7 @@
 
 .footer__list-item {
     align-content: center;
+    display: flex;
 }
 
 .footer__list-item:first-of-type {
@@ -33,12 +34,14 @@
 .footer__social-icon {
     height: 20px;
     filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg) brightness(99%) contrast(95%);
-    align-self: center;
+
 }
 
 .footer__social-link {
     padding-left: 10px;
     color: #F3EFF5;
+    font-size: 16px;
+    line-height: 20px;
     text-decoration: none;
     -webkit-transition-duration: 0.7s;
          -o-transition-duration: 0.7s;

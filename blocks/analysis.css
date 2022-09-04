@@ -2,19 +2,48 @@
     background: #454955;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-height: 536px;
 }
 
 .analysis__content {
-    box-sizing: border-box;
-    padding-top: 52px;
-    padding-right: 52px;
+    margin: 0px 52px;
+    align-self: center;
 }
+
 
 .analysis__subway {
     position: relative;
-    height: 650px;
-    left: -129px;
-    top: -280px;
-    z-index: 3;
+    width: 100%;
+    height: 130%;
+    align-self: center;
+    object-fit: cover;
+    margin-left: 32px;
+    z-index: 2;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .analysis {
+        grid-template-columns: 1fr;
+    }
+    .analysis__content {
+        background: url(../images/subway-map-dark.svg) no-repeat center / cover;
+        background-attachment: fixed;
+    }
+    .analysis__subway {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .analysis {
+        grid-template-columns: 1fr;
+    }
+    .analysis__content {
+        background: url(../images/subway-map-dark.svg) no-repeat center / cover;
+        background-size: fill;
+    }
+    .analysis__subway {
+        display: none;
+    }
 }
