@@ -1,56 +1,76 @@
 .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: #0D0A0B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #0d0a0b;
 }
 
 .nav__logo {
-    margin-left: 40px;
-    margin-right: auto;
+  margin-left: 40px;
+  margin-right: auto;
 }
 
 .nav__links {
-    list-style: none;
-    font-weight: 400;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    margin: 40px 80px 43px auto;
-    padding: 0;
+  list-style: none;
+  font-weight: 400;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  margin: 40px 80px 43px auto;
+  padding: 0;
 }
 
 .nav__link {
-    color: #F3EFF5;
-    text-decoration: none;
-    -webkit-transition-duration: 0.7s;
-         -o-transition-duration: 0.7s;
-            transition-duration: 0.7s;
+  color: #f3eff5;
+  text-decoration: none;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 
 .nav__link:hover {
-    color: #72B01D;
+  color: #72b01d;
+}
+
+.nav__menu-button {
+  height: 40px;
+  width: 40px;
+  margin: 20px 10px 20px auto;
+  align-self: center;
+  background: transparent url(../images/nav-menu.svg) no-repeat center;
+  filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
+    brightness(99%) contrast(95%);
+  border: none;
+  transition: transform 0.4s ease-in-out 0s;
+  display: none;
+}
+
+.nav__menu-button_animation {
+  transform: rotate(90deg);
 }
 
 /* tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .nav__links {
-        margin: 30px 40px 30px auto;
-    }
+  .nav__links {
+    margin: 30px 40px 30px auto;
+  }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-    .nav__logo {
-        height: 40px;
-        margin-left: 10px;
-        align-self: center;
-    }
-    .nav__links {
-        margin: 20px 10px 20px auto;
-    }
+  .nav__logo {
+    height: 40px;
+    margin: 20px auto 20px 10px;
+    align-self: center;
+  }
+  .nav__links {
+    display: none;
+  }
+  .nav__menu-button {
+    display: block;
+  }
 }

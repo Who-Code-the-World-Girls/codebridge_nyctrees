@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <title>NYC Trees</title>
 </head>
 <body class="page">
-    <script src="./vendor/boroughBoundaries.js"></script>
+
 <nav class="nav">
     <img src="./images/NYCTrees.svg" alt="NYC Trees Logo" class="nav__logo">
         <ul class="nav__links">
@@ -17,7 +19,19 @@
           <li> <a class="nav__link" href="#conclusions">Conclusions</a> </li>
           <li> <a class="nav__link" href="#about">About</a> </li>
         </ul>
+    <button class="nav__menu-button"></button>
 </nav>
+
+<div class="modal">
+    <div class="modal__container">
+      <ul class="modal__links">
+        <li> <a class="modal__link" href="#analysis">Analysis</a> </li>
+        <li> <a class="modal__link" href="#results">Results</a> </li>
+        <li> <a class="modal__link" href="#conclusions">Conclusions</a> </li>
+        <li> <a class="modal__link" href="#about">About</a> </li>
+      </ul>
+    </div>
+</div>
 
 <header class="header">
     <h1 class="header__title">Concrete Jungle</h1>
@@ -37,7 +51,9 @@
         </section>
     <section class="results" id="results">
         <h2 class="results__title title">Here are the results</h2>
-        <div id="chartdiv"></div>
+<div class="results__map" id="map">
+</div>
+
     </section>
   
     <section class="conclusions" id="conclusions">
@@ -67,5 +83,6 @@
         </div>
         <p class="footer__copyright">Created for Practicum's Fall 2022 Code Bridge</p>
       </footer>
+<script src="./scripts/index.js"></script>
 </body>
 </html>

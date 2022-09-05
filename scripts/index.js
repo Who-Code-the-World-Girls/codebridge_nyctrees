@@ -1,11 +1,9 @@
-var image = document.getElementsByClassName('conclusions__photo');
-new simpleParallax(image, {
-	overflow: true
-});
+const navButton = document.querySelector(".nav__menu-button");
+const mobileNavMenu = document.querySelector(".modal");
 
-var polygonSeries = chart.series.push(
-    am5map.MapPolygonSeries.new(root, {
-      geoJSON: boroughBoundaries
-    })
-  );
+function toggleNav() {
+  mobileNavMenu.classList.toggle("modal__opened");
+  navButton.classList.toggle("nav__menu-button_animation");
+}
 
+navButton.addEventListener("click", toggleNav);

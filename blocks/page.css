@@ -1,17 +1,16 @@
-.page{
-    background-color: #0D0A0B;
-    color: #f3eff5;
-    font-family: 'Hind', 'Arial', sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+.page {
+  background-color: #0d0a0b;
+  color: #f3eff5;
+  font-family: "Hind", "Arial", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 * {
-    /*border: red 1px solid;*/
-    scroll-behavior: smooth;
+  /*border: red 1px solid;*/
+  scroll-behavior: smooth;
 }
 
-
 .title {
-    font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
 }

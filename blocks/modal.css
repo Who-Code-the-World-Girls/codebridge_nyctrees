@@ -1,0 +1,33 @@
+.modal {
+  visibility: hidden;
+}
+
+.modal__opened {
+  visibility: visible;
+}
+
+.modal__container {
+  width: 35%;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(13, 10, 11, 0.60);
+}
+
+.modal__links {
+  list-style: none;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.modal__link {
+  color: #f3eff5;
+  text-decoration: none;
+}
