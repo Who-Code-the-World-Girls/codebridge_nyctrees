@@ -1,11 +1,28 @@
 .results {
   background: #0d0a0b;
   min-height: 600px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .results__title {
   grid-area: "title";
   -ms-grid-column-span: all;
   margin-top: 52px;
+}
+
+.results__chart {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results__boroughs {
+  width: 50%;
+  margin: 0 auto;
 }

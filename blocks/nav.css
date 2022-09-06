@@ -10,6 +10,7 @@
 .nav__logo {
   margin-left: 40px;
   margin-right: auto;
+  width: 68px;
 }
 
 .nav__links {
@@ -45,12 +46,14 @@
   filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
     brightness(99%) contrast(95%);
   border: none;
-  transition: transform 0.4s ease-in-out 0s;
   display: none;
+  transition: ease-in-out 0.2s;
 }
 
 .nav__menu-button_animation {
-  transform: rotate(90deg);
+  filter: invert(62%) sepia(14%) saturate(7486%) hue-rotate(47deg)
+    brightness(101%) contrast(77%);
+    transform: scale(1.1);
 }
 
 /* tablets */

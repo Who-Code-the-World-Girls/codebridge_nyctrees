@@ -53,6 +53,10 @@
   color: #72b01d;
 }
 
+.footer__logo {
+  width: 68px;
+}
+
 .footer__copyright {
   padding: 0px 0px 60px 80px;
   margin: 0;
@@ -63,7 +67,8 @@
   .footer__content {
     flex-direction: column-reverse;
     align-items: center;
-    padding-bottom: 50px;
+    padding: 0;
+    margin: 60px 0px;
   }
   .footer__logo {
     margin-top: 32px;

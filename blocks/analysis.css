@@ -20,27 +20,13 @@
 }
 
 /* tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .analysis {
     grid-template-columns: 1fr;
   }
   .analysis__content {
     background: url(../images/subway-map-dark.svg) no-repeat center / cover;
-    background-attachment: fixed;
-  }
-  .analysis__subway {
-    display: none;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .analysis {
-    grid-template-columns: 1fr;
-  }
-  .analysis__content {
-    background: url(../images/subway-map-dark.svg) no-repeat center / cover;
-    background-size: fill;
+    
   }
   .analysis__subway {
     display: none;

@@ -17,7 +17,6 @@
   margin: 160px auto 0 auto;
   align-self: center;
   z-index: 2;
-  border-radius: 50px;
 }
 
 .header__description {
@@ -29,7 +28,6 @@
   align-self: center;
   z-index: 2;
   top: 200px;
-  border-radius: 50px;
 }
 
 .header__trees {
@@ -51,20 +49,19 @@
 }
 
 /* mobile */
-@media screen and (min-width: 540px) and (max-width: 767px) {
+@media screen and (min-width: 533px) and (max-width: 767px) {
   .header__title {
-    font-size: 4rem;
+    font-size: 3.7rem;
     line-height: 4rem;
     margin-bottom: 0;
   }
   .header__description {
     font-size: 2rem;
     line-height: 2rem;
-    margin-top: 50px;
   }
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 530px) {
   .header__title {
     font-size: 3rem;
     line-height: 3rem;
@@ -72,5 +69,16 @@
   .header__description {
     font-size: 1.3rem;
     line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .header__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .header__description {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
