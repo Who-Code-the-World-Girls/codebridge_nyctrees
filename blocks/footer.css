@@ -51,6 +51,7 @@
 
 .footer__social-link:hover {
   color: #72b01d;
+  text-decoration: none;
 }
 
 .footer__logo {
