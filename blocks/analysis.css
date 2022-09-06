@@ -5,7 +5,7 @@
 }
 
 .analysis__content {
-  margin: 0px 52px;
+  padding: 0px 52px;
   align-self: center;
 }
 
@@ -26,7 +26,6 @@
   }
   .analysis__content {
     background: url(../images/subway-map-dark.svg) no-repeat center / cover;
-    
   }
   .analysis__subway {
     display: none;
