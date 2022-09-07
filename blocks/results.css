@@ -8,28 +8,37 @@
   align-items: center;
 }
 
-.results__title {
-  grid-area: "title";
-  -ms-grid-column-span: all;
-  margin-top: 52px;
-}
-
 .results__tree-status {
   background-color: #f3eff5;
   padding: 65px;
   border-radius: 50%;
-  align-self: flex-start;
-  margin: 50px;
+  align-self: flex-end;
+  margin-top: 50px;
+  margin-right: 15%;
 }
 
 .results__tree-status-image {
-  height: 300px;
+  height: 350px;
+}
+
+.results__trees-per-year {
+  background-color: #f3eff5;
+  padding: 50px;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin-left: 15%;
+}
+
+.results__trees-per-year-image {
+  height: 450px;
 }
 
 .results__borough-trees {
   background-color: #f3eff5;
   padding: 50px;
   border-radius: 50%;
+  align-self: flex-end;
+  margin-right: 15%;
 }
 
 .results__borough-trees-image {
@@ -42,4 +51,5 @@
   z-index: 5;
   display: block;
   align-self: flex-end;
+  grid-area: "map";
 }
