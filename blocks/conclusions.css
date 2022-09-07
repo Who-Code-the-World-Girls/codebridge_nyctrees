@@ -10,6 +10,10 @@
     margin: 0px 52px;
 }
 
+.conclusions__content-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
 .conclusions__photo {
     height: 650px;
     justify-self: end;

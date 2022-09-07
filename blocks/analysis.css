@@ -10,6 +10,10 @@
   font-size: 1.2rem;
 }
 
+.analysis__content-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
 .analysis__subway {
   position: relative;
   width: 100%;

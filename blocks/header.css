@@ -19,18 +19,6 @@
   z-index: 2;
 }
 
-.header__description {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 400;
-  text-shadow: 0 0 10px #0d0a0b;
-  z-index: 2;
-  top: 200px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .header__trees {
   width: 100%;
   z-index: 1;
@@ -42,45 +30,26 @@
 /* tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header__title {
-    font-size: 5.5rem;
-  }
-  .header__description {
-    font-size: 2rem;
-    margin-top: 0;
+    font-size: 4rem;
   }
 }
 
 /* mobile */
-@media screen and (min-width: 533px) and (max-width: 767px) {
+@media screen and (min-width: 531px) and (max-width: 767px) {
   .header__title {
     font-size: 3.7rem;
-    line-height: 4rem;
+    line-height: 5rem;
     margin-bottom: 0;
   }
-  .header__description {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
 }
 
+/* small mobile */
 @media screen and (max-width: 530px) {
-  .header__title {
-    font-size: 3rem;
-    line-height: 3rem;
+  .header {
+    height: 70vh;
   }
-  .header__description {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-}
-
-@media screen and (max-width: 529px) {
   .header__title {
     font-size: 2rem;
-    line-height: 2rem;
-  }
-  .header__description {
-    font-size: 1rem;
-    line-height: 1rem;
+    line-height: 3rem;
   }
 }
