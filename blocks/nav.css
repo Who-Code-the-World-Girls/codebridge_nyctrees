@@ -1,9 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   background-color: #0d0a0b;
 }
 
@@ -41,19 +52,29 @@
   height: 40px;
   width: 40px;
   margin: 20px 10px 20px auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   background: transparent url(../images/nav-menu.svg) no-repeat center;
-  filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
+  -webkit-filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
+    brightness(99%) contrast(95%);
+          filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
     brightness(99%) contrast(95%);
   border: none;
   display: none;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
 
 .nav__menu-button_animation {
-  filter: invert(62%) sepia(14%) saturate(7486%) hue-rotate(47deg)
+  -webkit-filter: invert(62%) sepia(14%) saturate(7486%) hue-rotate(47deg)
     brightness(101%) contrast(77%);
-    transform: scale(1.1);
+          filter: invert(62%) sepia(14%) saturate(7486%) hue-rotate(47deg)
+    brightness(101%) contrast(77%);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /* tablets */
@@ -68,7 +89,9 @@
   .nav__logo {
     height: 40px;
     margin: 20px auto 20px 10px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .nav__links {
     display: none;

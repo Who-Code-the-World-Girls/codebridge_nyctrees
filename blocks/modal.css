@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .modal {
   visibility: hidden;
 }
@@ -14,6 +21,8 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgba(13, 10, 11, 0.8);
+  -webkit-transition: ease-in;
+  -o-transition: ease-in;
   transition: ease-in;
 }
 
@@ -22,8 +31,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 15px;
   margin-left: 35px;
   margin-right: auto;

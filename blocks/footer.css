@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .footer {
   background: #0d0a0b;
 }
@@ -23,7 +30,10 @@
 }
 
 .footer__list-item {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -33,7 +43,9 @@
 
 .footer__social-icon {
   height: 20px;
-  filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
+  -webkit-filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
+    brightness(99%) contrast(95%);
+          filter: invert(97%) sepia(4%) saturate(188%) hue-rotate(235deg)
     brightness(99%) contrast(95%);
 }
 
@@ -66,8 +78,13 @@
 /* mobile */
 @media screen and (max-width: 540px) {
   .footer__content {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin: 60px 0px;
   }
