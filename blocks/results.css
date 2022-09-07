@@ -8,41 +8,65 @@
   align-items: center;
 }
 
+.results__container {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 5rem;
+}
+
+.results__desc {
+  align-self: center;
+  justify-self: end;
+}
+
 .results__tree-status {
-  background-color: #f3eff5;
-  padding: 65px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 3rem;
+}
+
+.results__tree-status_graph {
+  background-color: #fff;
   border-radius: 50%;
-  align-self: flex-end;
-  margin-top: 50px;
-  margin-right: 15%;
 }
 
 .results__tree-status-image {
   height: 350px;
+  padding: 110px 70px;
 }
 
 .results__trees-per-year {
-  background-color: #f3eff5;
-  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+}
+
+.results__trees-per-year_graph {
+  background-color: #fff;
   border-radius: 50%;
-  align-self: flex-start;
-  margin-left: 15%;
 }
 
 .results__trees-per-year-image {
   height: 450px;
+  padding: 45px;
 }
 
 .results__borough-trees {
-  background-color: #f3eff5;
-  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 3rem;
+}
+
+.results__borough-trees_graph {
+  background-color: #fff;
   border-radius: 50%;
-  align-self: flex-end;
-  margin-right: 15%;
 }
 
 .results__borough-trees-image {
   height: 500px;
+  padding: 10px;
 }
 
 .results__heat-map {
@@ -52,4 +76,10 @@
   display: block;
   align-self: flex-end;
   grid-area: "map";
+}
+
+@media screen (max-size:768) {
+  .results__circle {
+
+  }
 }

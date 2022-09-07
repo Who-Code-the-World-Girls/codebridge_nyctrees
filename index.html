@@ -95,22 +95,36 @@
       </section>
 
       <section class="results" id="results">
-        <div class="results__tree-status">
+        <ul class="results__container">
+
+        <li class="results__tree-status results__circle">
+          <h3 class="results__tree-status_desc results__desc">Here are some words about the graph over there</h3>
+          <div class="results__tree-status_graph">
           <img
-            src="./images/results__bar-graph.png"
+            src="./images/Tree Status.jpg"
             class="results__tree-status-image"
           />
-        </div>
-        <div class="results__trees-per-year">
+          </div>
+        </li>
+
+        <li class="results__trees-per-year results__circle">
+        <div class="results__trees-per-year_graph">
           <img src="./images/Num Trees Per Year(2).svg"
           class="results__trees-per-year-image"/>
         </div>
-        <div class="results__borough-trees">
+        <h3 class="results__tree-per-year_desc results__desc">Here are some words about the graph over there</h3>
+         </li>
+
+        <li class="results__borough-trees results__circle">
+          <h3 class="results__borough-trees_desc results__desc">Here are some words about the graph over there</h3>
+        <div class="results__borough-trees_graph">
           <img
           src="./images/results__pie-chart.svg"
           class="results__borough-trees-image" />
         </div>
-        
+        </li>
+      </ul>
+
         <div
           class="results__heat-map folium-map"
           id="map_fea1da6b902b2372709301d43bc769cf"
