@@ -18,34 +18,24 @@
 
 .results__desc {
   align-self: center;
-  justify-self: end;
+  justify-self: center;
 }
 
-.results__tree-status {
+.results__graph-back {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.results__list-item {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 3rem;
 }
 
-.results__tree-status_graph {
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.results__tree-status-image {
-  height: 350px;
-  padding: 110px 70px;
-}
-
-.results__trees-per-year {
+.results__list-item:nth-of-type(2) {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
-}
-
-.results__trees-per-year_graph {
-  background-color: #fff;
-  border-radius: 50%;
 }
 
 .results__trees-per-year-image {
@@ -53,15 +43,9 @@
   padding: 45px;
 }
 
-.results__borough-trees {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 3rem;
-}
-
-.results__borough-trees_graph {
-  background-color: #fff;
-  border-radius: 50%;
+.results__tree-status-image {
+  height: 350px;
+  padding: 110px 70px;
 }
 
 .results__borough-trees-image {
@@ -75,11 +59,12 @@
   z-index: 5;
   display: block;
   align-self: flex-end;
-  grid-area: "map";
 }
 
-@media screen (max-size:768) {
-  .results__circle {
-
+/* mobile */
+@media screen and (max-width:768) {
+  .results__list-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
