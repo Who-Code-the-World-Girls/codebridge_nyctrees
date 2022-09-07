@@ -1,169 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <link rel="icon" type="favicon" href="./images/NYCTrees.svg" />
     <title>NYC Trees</title>
-</head>
-<body class="page">
+  </head>
 
-<nav class="nav">
-    <img src="./images/NYCTrees.svg" alt="NYC Trees Logo" class="nav__logo">
-        <ul class="nav__links">
-          <li> <a class="nav__link" href="#analysis">Analysis</a> </li>
-          <li> <a class="nav__link" href="#results">Results</a> </li>
-          <li> <a class="nav__link" href="#conclusions">Conclusions</a> </li>
-          <li> <a class="nav__link" href="#about">About</a> </li>
-        </ul>
-    <button class="nav__menu-button"></button>
-</nav>
-
-<div class="modal">
-    <div class="modal__container">
-      <ul class="modal__links">
-        <li> <a class="modal__link" href="#analysis">Analysis</a> </li>
-        <li> <a class="modal__link" href="#results">Results</a> </li>
-        <li> <a class="modal__link" href="#conclusions">Conclusions</a> </li>
-        <li> <a class="modal__link" href="#about">About</a> </li>
+  <body class="page">
+    <nav class="nav">
+      <img src="./images/NYCTrees.svg" alt="NYC Trees Logo" class="nav__logo" />
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#analysis">Analysis</a></li>
+        <li><a class="nav__link" href="#results">Results</a></li>
+        <li><a class="nav__link" href="#conclusions">Conclusions</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
       </ul>
+      <button class="nav__menu-button"></button>
+    </nav>
+
+    <div class="modal">
+      <div class="modal__container">
+        <ul class="modal__links">
+          <li><a class="modal__link" href="#analysis">Analysis</a></li>
+          <li><a class="modal__link" href="#results">Results</a></li>
+          <li><a class="modal__link" href="#conclusions">Conclusions</a></li>
+          <li><a class="modal__link" href="#about">About</a></li>
+        </ul>
+      </div>
     </div>
-</div>
 
-<header class="header">
-    <h1 class="header__title">Concrete Jungle</h1>
-    <p class="header__description">Planting trees in New York City</p>
-    <img class="header__trees" src="./images/trees.png" alt="A row of lucious green trees" />
+    <header class="header">
+      <h1 class="header__title">Concrete Jungle</h1>
+      <p class="header__description">Street Tree Planting in NYC</p>
+      <img
+        class="header__trees"
+        src="./images/trees.png"
+        alt="A row of lucious green trees"
+      />
+    </header>
 
-  </header>
-
-<main class="page__content">
-    <section class="analysis" id="analysis">
-      <img class="analysis__subway" src="./images/subway-map.svg" alt="Subway map of NYC"/>
+    <main class="page__content">
+      <section class="analysis" id="analysis">
+        <img
+          class="analysis__subway"
+          src="./images/subway-map.svg"
+          alt="Subway map of NYC"
+        />
         <div class="analysis__content">
-            <h2 class="analysis__content-title title">Here is the analysis</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque quis mi vel placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id nunc a odio porta lobortis quis non lorem. Vestibulum vel eros id ligula laoreet elementum at at metus. Sed egestas lectus a est pretium, eget tristique risus lacinia. Praesent enim libero, imperdiet in iaculis in, condimentum quis lectus. Cras efficitur gravida lectus eget rhoncus.</p>
-            <p>Etiam consequat facilisis purus. Morbi ac felis et felis tempus mollis quis sit amet libero. Integer porttitor malesuada elit, at imperdiet nulla tincidunt non. Pellentesque quis libero vulputate, elementum dolor vel, congue risus. Quisque tempus urna at tellus tempus, in aliquet nisl facilisis. Nunc porta accumsan enim eu sollicitudin. Duis sed maximus ante. Nunc sed velit nec felis finibus porttitor id a libero. Nunc elit nisl, mollis vel mi non, vestibulum vestibulum turpis. Aliquam ante urna, pulvinar id porta a, rutrum at nisi. Proin sit amet sagittis ligula. Mauris non orci nisl.</p>
+          <h2 class="analysis__content-title title">Analysis</h2>
+          <p>
+            In an effort to grow a "greener" New York City, the New York City
+            Department of Parks and recreation began planting what is referred
+            to as "urban forests" throughout the different
+            neighborhoods/boroughs of NYC.
+          </p>
+
+          <p>
+            The data analyzed is sourced from reports from the New York City
+            Tree Work Hub, which provided data about street tree planting in
+            several different New York neighborhoods. With this data, we wanted
+            to focus on creating a site that would provide the user with an
+            answer to retrieve the following information: 
+            <ul>
+              <li>the overall distribution of trees planted in each borough</li>
+              <li>the status of
+                whether or not the scheduled planting was completed or still pending</li> 
+                <li>provide a visualization of boroughs that are greener based
+                  on the number of trees in each borough.The user will be able to use
+                  the map to locate boroughs in NYC that are greener versus those that
+                  still need more work.</li> 
+          </ul>
+          </p>
         </div>
-        </section>
-    <section class="results" id="results">
-        <h2 class="results__title title">Here are the results</h2>
-<div class="results__chart">
-<canvas id="myChart"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-  ];
+      </section>
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(114, 176, 29)',
-      borderColor: 'rgb(114, 176, 29)',
-      data: [0, 10, 5, 2, 20, 30, 45],
-    }]
-  };
+      <section class="results" id="results">
+        <h2 class="results__title">Results</h2>
+        <div class="results__tree-status">
+          <img
+            src="./images/results__bar-graph.png"
+            class="results__tree-status-image"
+          />
+        </div>
+        <div class="results__borough-trees">
+          <img
+          src="./images/results__pie-chart.svg"
+          class="results__borough-trees-image" />
+        </div>
+        <div
+          class="results__heat-map folium-map"
+          id="map_fea1da6b902b2372709301d43bc769cf"
+        >
+          <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+          <script src="./scripts/heatmap.js"></script>
+        </div>
+      </section>
 
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-</script>
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
-<p>Here are words about this chart</p>
-</div>
-
-<div>
-  <img class="results__boroughs" src="./images/boroughs.png" />
-</div>
-
-<div class="results__chart">
-<canvas id="myChart2"></canvas>
-<script>
-  const ctx = document.getElementById('myChart2').getContext('2d');
-const myChart2 = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Manhattan', 'Brooklyn', 'Queens', 'Staten Island', 'The Bronx', ],
-        datasets: [{
-            label: '# of Trees',
-            data: [50, 30, 32, 40, 70, 10],
-            backgroundColor: [
-                'rgba(114, 176, 29, 0.2)',
-                'rgba(63, 125, 32, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(114, 176, 29, 1)',
-                'rgba(63, 125, 32, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
-<p>Here are words about this chart</p>
-</div>
-
-    </section>
-  
-    <section class="conclusions" id="conclusions">
+      <section class="conclusions" id="conclusions">
         <div class="conclusions__content">
-          <h2 class="conclusions__content-title title">Here is the conclusion</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Hac habitasse platea dictumst quisque sagittis. Nec nam aliquam sem et tortor consequat id. Pellentesque pulvinar pellentesque habitant morbi. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. </p>
-            <p>Platea dictumst vestibulum rhoncus est. Quam id leo in vitae turpis massa. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Vestibulum rhoncus est pellentesque elit. Euismod lacinia at quis risus sed vulputate. Sit amet purus gravida quis blandit turpis cursus. Imperdiet sed euismod nisi porta lorem. Consectetur adipiscing elit pellentesque habitant. Sagittis purus sit amet volutpat consequat. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Velit euismod in pellentesque massa. Duis tristique sollicitudin nibh sit. Imperdiet proin fermentum leo vel orci porta non.</p>
+          <h2 class="conclusions__content-title title">Conclusion</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+            venenatis a condimentum vitae. Hac habitasse platea dictumst quisque
+            sagittis. Nec nam aliquam sem et tortor consequat id. Pellentesque
+            pulvinar pellentesque habitant morbi. Massa placerat duis ultricies
+            lacus sed turpis tincidunt id aliquet.
+          </p>
+          <p>
+            Platea dictumst vestibulum rhoncus est. Quam id leo in vitae turpis
+            massa. Tempus iaculis urna id volutpat lacus laoreet non curabitur.
+            Vestibulum rhoncus est pellentesque elit. Euismod lacinia at quis
+            risus sed vulputate. Sit amet purus gravida quis blandit turpis
+            cursus. Imperdiet sed euismod nisi porta lorem. Consectetur
+            adipiscing elit pellentesque habitant. Sagittis purus sit amet
+            volutpat consequat. Nulla facilisi morbi tempus iaculis urna id
+            volutpat lacus laoreet. Velit euismod in pellentesque massa. Duis
+            tristique sollicitudin nibh sit. Imperdiet proin fermentum leo vel
+            orci porta non.
+          </p>
         </div>
-      <img src="./images/street-view.webp" class="conclusions__photo" />
-    </section>
+        <img
+          src="./images/street-view.webp"
+          class="conclusions__photo"
+          alt="A tree-lined view of NYC"
+        />
+      </section>
+    </main>
 
-    <footer class="footer" id="about"><footer  class="footer" id="footer">
-        <div class="footer__content">
-          <img class="footer__logo" src="./images/NYCTrees.svg" alt="NYC Trees"/>
-          <div class="footer__social">
+    <footer class="footer" id="about">
+      <div class="footer__content">
+        <img class="footer__logo" src="./images/NYCTrees.svg" alt="NYC Trees" />
+        <div class="footer__social">
           <ul class="footer__list">
             <li class="footer__list-item">
-              <img class="footer__social-icon" src="./images/data-science.svg" alt="Data science symbol"/>
-              <a class="footer__social-link" href="# Dina's linkedin" target="_blank">Data Science | Dina Saadeh</a>
+              <img
+                class="footer__social-icon"
+                src="./images/data-science.svg"
+                alt="Data science symbol"
+              />
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/dina-saadeh-234499128"
+                target="_blank"
+                >Data Science | Dina Saadeh</a
+              >
             </li>
             <li class="footer__list-item">
-              <img class="footer__social-icon" src="./images/web-dev.svg" alt="Coding symbol"/>
-              <a class="footer__social-link" href="https://www.linkedin.com/in/jendoc" target="_blank">Web Dev | Jenny Doctor</a>
+              <img
+                class="footer__social-icon"
+                src="./images/web-dev.svg"
+                alt="Coding symbol"
+              />
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/jendoc"
+                target="_blank"
+                >Web Dev | Jenny Doctor</a
+              >
             </li>
           </ul>
-          </div>
         </div>
-        <p class="footer__copyright">Created for Practicum's Fall 2022 Code Bridge</p>
-      </footer>
-<script src="./scripts/index.js"></script>
-</body>
+      </div>
+      <p class="footer__copyright">
+        Created for Practicum's Fall 2022 Code Bridge
+      </p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
