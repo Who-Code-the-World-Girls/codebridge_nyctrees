@@ -16,9 +16,10 @@
   margin: 5rem;
 }
 
-.results__desc {
+.results__capt {
   align-self: center;
   justify-self: center;
+  font-style: italic;
 }
 
 .results__graph-back {
@@ -59,6 +60,17 @@
   z-index: 5;
   display: block;
   align-self: flex-end;
+}
+
+.results__heat-map-caption {
+  height: 5rem;
+  margin: 0px 40px 40px 40px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-bottom: #f3eff5 solid 1px;
+  text-align: center;
+  font-style: italic;
 }
 
 /* mobile */
