@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="./pages/index.css" />
     <link
@@ -19,7 +19,7 @@
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
     ></script>
-    <link rel="icon" type="favicon" href="./images/NYCTrees.svg" />
+    <link rel="icon" href="./images/NYCTrees.svg" />
     <title>NYC Trees</title>
   </head>
 
@@ -47,8 +47,7 @@
     </div>
 
     <header class="header">
-      <h1 class="header__title">Concrete Jungle</h1>
-      <p class="header__description">Street Tree Planting in NYC</p>
+      <h1 class="header__title">From Concrete Jungle <br> to Urban Forest</h1>
       <img
         class="header__trees"
         src="./images/trees.png"
@@ -80,12 +79,12 @@
             Tree Work Hub, which provided data about street tree planting in
             several different New York neighborhoods. With this data, we wanted
             to focus on the following information: 
+          </p>
             <ul>
               <li>the overall distribution of trees planted in each borough</li>
               <li>the status of whether or not the scheduled planting was completed or still pending</li> 
               <li>provide a visualization of boroughs that are greener based on the number of trees in each.</li> 
           </ul>
-          </p>
         </div>
       </section>
 
@@ -96,26 +95,29 @@
           <h3 class="results__tree-status_capt results__capt">Thousands on trees have been planted, or plan to be planted across the city. <br> Interestingly, nearly all of Manhattan's trees are still pending.  </h3>
           <div class="results__tree-status_graph results__graph-back">
           <img
-            src="./images/Tree Status.jpg"
+            src="./images/tree_status.jpg"
             class="results__tree-status-image results__graph"
+            alt="Bar graph comparing completed tree planting projects with pending projects, by each borough. Most boroughs have successfully completed the majority of their planned planting, with the exception of Manhattan, which has completed almost none."
           />
           </div>
         </li>
 
         <li class="results__trees-per-year results__list-item">
         <div class="results__trees-per-year_graph results__graph-back">
-          <img src="./images/Num Trees Per Year(2).svg"
-          class="results__trees-per-year-image results__graph"/>
+          <img src="./images/trees_per_year.svg"
+          class="results__trees-per-year-image results__graph"
+          alt="Line graph showing the upward trend of trees planted on the streets of NYC. A sharp increase occured in 2022, showing that much more trees were planted in this year than all previous years by far."/>
         </div>
         <h3 class="results__tree-per-year_capt results__capt">A clear effort has been made to plant more trees overall. <br> The sharp increase in the recent year is particularly notable.</h3>
          </li>
 
         <li class="results__borough-trees results__list-item">
-          <h3 class="results__borough-trees_capt results__capt">Brooklyn and Queens account for the majority of trees planted so far, with The Bronx not far behind. <br> Staten Island and Manhattan, on the other hand, lag behind signifigantly.</h3>
+          <h3 class="results__borough-trees_capt results__capt">Brooklyn and Queens account for the majority of trees planted so far, with The Bronx not far behind. <br> Staten Island and Manhattan, on the other hand, lag behind significantly.</h3>
         <div class="results__borough-trees_graph results__graph-back">
           <img
           src="./images/results__pie-chart.svg"
-          class="results__borough-trees-image results__graph" />
+          class="results__borough-trees-image results__graph" 
+          alt="Circle graph showing the distribution of completed tree planting projects. Brooklyn and Queens share 73% of the completed tree plantings. The Bronx is responsible for 21%, and Staten Island for 6%. Manhattan has yet to plant a significant number of trees."/>
         </div>
         </li>
       </ul>
@@ -146,7 +148,6 @@
           alt="A tree-lined view of NYC"
         />
         </section>
-    </main>
     </main>
 
     <footer class="footer" id="about">

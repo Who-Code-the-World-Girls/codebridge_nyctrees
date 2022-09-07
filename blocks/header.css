@@ -12,10 +12,10 @@
   font-family: "Montserrat", "Arial", sans-serif;
   text-shadow: 0 0 15px #0d0a0b;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 110px;
   line-height: 150px;
   margin: 160px auto 0 auto;
-  align-self: center;
+  text-align: center;
   z-index: 2;
 }
 
@@ -25,9 +25,10 @@
   line-height: 50px;
   font-weight: 400;
   text-shadow: 0 0 10px #0d0a0b;
-  align-self: center;
   z-index: 2;
   top: 200px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .header__trees {
