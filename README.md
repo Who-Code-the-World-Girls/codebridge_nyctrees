@@ -8,7 +8,7 @@
 
 **Intro**
 
-A data-driven landing page created for Practicum by Yandex's Fall 2022 Code Bridge.
+A data-driven landing page created for Practicum's Fall 2022 Code Bridge.
 
  In an effort to grow a ‘greener’ New York City, the New York City Department of Parks and Recreation has attempted to turn its concrete jungle into ‘urban forests’ by planting trees throughout various boroughs of NYC.
  
