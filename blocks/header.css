@@ -12,7 +12,7 @@
     url(../images/header_background.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/header_background.jpg);
-    height: 100vh;
+    height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
